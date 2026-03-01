@@ -1,0 +1,1304 @@
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+    <div>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Grant Tracking</h1>
+        <p class="text-gray-500 dark:text-text-muted text-sm">Overview of active research grants and funding status.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+        <div class="relative w-full sm:w-64 md:hidden">
+            <span
+                class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl">search</span>
+            <input
+                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-surface-light dark:bg-surface-dark text-sm focus:ring-1 focus:ring-primary shadow-sm dark:text-white placeholder-gray-400"
+                placeholder="Find grant..." type="text" />
+        </div>
+        <button
+            class="px-5 py-2.5 bg-primary hover:bg-green-800 text-white rounded-xl text-sm font-medium flex items-center justify-center gap-2 shadow-lg shadow-green-900/20 transition-all whitespace-nowrap">
+            <span class="material-icons-round text-lg">add</span>
+            Add New Grant
+        </button>
+    </div>
+</div>
+
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-primary rounded-2xl p-6 shadow-lg shadow-primary/20 text-black">
+        <div class="flex justify-between items-start mb-4">
+            <p class="font-bold opacity-80 text-xs uppercase tracking-wider">Total Funding</p>
+            <div class="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center">
+                <span class="material-icons-round text-sm">account_balance</span>
+            </div>
+        </div>
+        <h3 class="text-4xl font-bold mb-3">₹12.4M</h3>
+        <div class="flex items-center gap-2 text-xs font-bold">
+            <span class="bg-black/20 px-1.5 py-0.5 rounded text-[10px]">↑ 18%</span>
+            <span class="opacity-80">Over last fiscal year</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex items-center justify-between">
+        <div>
+            <p class="text-sm font-medium text-gray-500 dark:text-text-muted mb-1">Active Grants</p>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white">42</h3>
+        </div>
+        <div
+            class="w-12 h-12 rounded-full bg-gray-50 dark:bg-gray-800/30 flex items-center justify-center text-primary dark:text-primary">
+            <span class="material-icons-round text-2xl">science</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex items-center justify-between">
+        <div>
+            <p class="text-sm font-medium text-gray-500 dark:text-text-muted mb-1">Pending Approvals</p>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white">8</h3>
+        </div>
+        <div
+            class="w-12 h-12 rounded-full bg-gray-50 dark:bg-gray-800/30 flex items-center justify-center text-gray-600 dark:text-gray-400">
+            <span class="material-icons-round text-2xl">pending_actions</span>
+        </div>
+    </div>
+</div>
+
+<!-- Grant Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+    <!-- Quantum Computing Research -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">memory</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Quantum Computing Research
+                    </h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">National Science Foundation</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <img alt="Researcher" class="w-6 h-6 rounded-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7veWjqKB1l_7Zd_FWOjQiqKL8HxoNrU6B_MIdMg0dhAP08TcAxqcCaLzbaKHWKs7tooU1sIc1Si0wHSleYRovDtGebshWgR5bRb7Ks0jX-FoIP2UsMDEFVZcNmkWOelSMPwq_XGHseHD4ynS5MFrbj52sUQP7VQuwfgzz-TDD_7iDo_Z1K7_xaLmyshPu8Snc0WH4emEWe3P1fPqnv2R13KOE0oCCf3tlvNnMwcJBo7ZloT2qjbHorzQyM7rrtawl_xSTr6H8BZ0" />
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. A. Deff</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">public</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">NSF Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">45%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 45%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹1.2M</span>
+                <span>Total: ₹2.6M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Sustainable Energy Initiative -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+                    <span class="material-icons-round text-2xl">eco</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Sustainable Energy
+                        Initiative</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Dept of Energy</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <img alt="Researcher" class="w-6 h-6 rounded-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE56NTDmG4IyfYzP0GQ65eJbyMhBtZYpV2NfDCkgVyAC84v9Yry07wZYqtrlUmXzVGKUwmepWfoF9J3295aKZyc4dBeODoGRlvVTXuDs0atQ_16LtLe-_2jW1FZC6kPFAZe8uKF--Q1f5c1v8lj4n6UWyo69BSV851yLI-Eje5-VAQqSNysN6bIFN5jhUu9aDV3kANONTd0nRN16YGNLXy9D6X2OJreG3sD1zHy-EU3zmjyPNwbIjm2deRFQMdxbz-8iUYziTGwog" />
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Prof. J. Smith</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">bolt</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Gov Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">72%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 72%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹3.8M</span>
+                <span>Total: ₹5.3M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Genomic Data Analysis -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">biotech</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Genomic Data Analysis</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">NIH</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <img alt="Researcher" class="w-6 h-6 rounded-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRI-74VWHQbvZpILoH6jsbPR1A6j3epHTYlsv-rLChiYAWDt-wBTXTNXZaM4rokLCF_VeFp5Fg_FwYy9PSEVs1Iccc51Y4m4zVE3uLLvKunKHaQzxkbz6HTR2cL0x_5dK5-RGSoEAFH0f6YnxqdJhJXQqOqXPpOv3sm2y0GLr8cNL5S6FrCmnWvOIY1WXKWDBQJc2oLmugJIn6DG3vmjMfLAMeHHaU1-HJoMalMIX2Tp1hS7ENiFqWhLYIDW8rV0U5U_QNPk4emdQ" />
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. S. Miller</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">local_hospital</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Medical Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">28%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 28%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.4M</span>
+                <span>Total: ₹1.5M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Urban Mobility Study -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">analytics</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Urban Mobility Study</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">City Planning Council</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        R</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. R. Khan</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">location_city</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Muni Bond</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">88%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-gray-500 h-2 rounded-full" style="width: 88%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.8M</span>
+                <span>Total: ₹0.9M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- AI Ethics Framework -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">psychology</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">AI Ethics Framework</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Tech Future Fund</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        L</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. L. Chen</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">computer</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Private Tech</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">15%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 15%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.3M</span>
+                <span>Total: ₹2.0M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Ocean Microplastics -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">waves</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Ocean Microplastics</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Marine Bio Institute</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        M</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Prof. M. Ray</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">water_drop</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Env Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">55%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 55%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.4M</span>
+                <span>Total: ₹0.8M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Neuroscience Brain Mapping -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">neurology</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Neuroscience Brain Mapping
+                    </h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">NIH BRAIN Initiative</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        K</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. K. Patel</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">local_hospital</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">NIH Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">62%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 62%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹2.1M</span>
+                <span>Total: ₹3.4M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Climate Modeling AI -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">thermostat</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Climate Modeling AI</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">NOAA Partnership</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        T</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Prof. T. Woods</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">public</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Fed Agency</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">35%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 35%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.7M</span>
+                <span>Total: ₹2.0M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Cybersecurity Infrastructure -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-600 dark:text-red-400">
+                    <span class="material-icons-round text-2xl">shield</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Cybersecurity
+                        Infrastructure</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">DARPA</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        A</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. A. Deff</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">security</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Defense</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">91%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 91%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹4.1M</span>
+                <span>Total: ₹4.5M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Smart Agriculture IoT -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">agriculture</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Smart Agriculture IoT</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">ICAR</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        V</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. V. Sharma</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">eco</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Agri Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">54%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 54%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹1.5M</span>
+                <span>Total: ₹2.8M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Autonomous Vehicles -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">directions_car</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Autonomous Vehicles</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Tata Motors</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        H</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Prof. H. Das</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">factory</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Industry</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">80%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹3.2M</span>
+                <span>Total: ₹4.0M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Drug Discovery AI -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">medication</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Drug Discovery AI</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">CSIR</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        K</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. K. Jain</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">science</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">CSIR Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">30%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 30%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.9M</span>
+                <span>Total: ₹3.0M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Renewable Materials -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">recycling</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Renewable Materials</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">DST India</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        T</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Prof. T. Woods</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">public</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">DST Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">72%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 72%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹1.8M</span>
+                <span>Total: ₹2.5M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Space Debris Tracking -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">satellite_alt</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Space Debris Tracking</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">ISRO</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        A</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. A. Deff</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">rocket_launch</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">ISRO Fund</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">75%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary/70 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹4.5M</span>
+                <span>Total: ₹6.0M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Mental Health Analytics -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">psychology</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Mental Health Analytics
+                    </h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">WHO</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        N</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. N. Foster</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">health_and_safety</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Health Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">25%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 25%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.3M</span>
+                <span>Total: ₹1.2M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Blockchain Governance -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">token</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Blockchain Governance</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">NASSCOM</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        S</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. S. Reddy</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">computer</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Tech Fund</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">40%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 40%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.6M</span>
+                <span>Total: ₹1.5M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Water Purification -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">water_drop</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Water Purification</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">UNICEF</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        L</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. L. Prasad</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">public</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">UN Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">61%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 61%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹1.1M</span>
+                <span>Total: ₹1.8M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Heritage Digitization -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">temple_hindu</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Heritage Digitization</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">ASI India</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        C</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. C. Roy</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">museum</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Culture Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">50%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 50%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.5M</span>
+                <span>Total: ₹1.0M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- 5G Network Research -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">cell_tower</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">5G Network Research</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">DoT India</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        P</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. P. Gupta</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">router</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Telecom</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">67%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full" style="width: 67%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹2.4M</span>
+                <span>Total: ₹3.6M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Earthquake Prediction -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">landslide</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Earthquake Prediction</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">IMD</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        G</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Dr. G. Menon</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">public</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Gov Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">77%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-primary/70 h-2 rounded-full" style="width: 77%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹1.7M</span>
+                <span>Total: ₹2.2M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+
+    <!-- Linguistic AI Models -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">translate</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Linguistic AI Models</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mt-1">MeitY</p>
+                </div>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lead Researcher</p>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-xs text-gray-500 font-bold">
+                        B</div>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Prof. B. Kumar</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Funding Source</p>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-round text-sm text-gray-400">computer</span>
+                    <span class="text-sm font-medium text-gray-700 dark:text-gray-200">MeitY Grant</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Budget Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">40%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2">
+                <div class="bg-secondary h-2 rounded-full" style="width: 40%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Spent: ₹0.8M</span>
+                <span>Total: ₹2.0M</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Edit</button>
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+        </div>
+    </div>
+</div>

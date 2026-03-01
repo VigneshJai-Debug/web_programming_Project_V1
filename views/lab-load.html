@@ -1,0 +1,1209 @@
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+    <div>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Lab Load</h1>
+        <p class="text-gray-500 dark:text-text-muted text-sm">Monitor laboratory utilization, equipment status, and
+            scheduling across all departments.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+        <div class="relative w-full sm:w-64 md:hidden">
+            <span
+                class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl">search</span>
+            <input
+                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-surface-light dark:bg-surface-dark text-sm focus:ring-1 focus:ring-primary shadow-sm dark:text-white placeholder-gray-400"
+                placeholder="Search labs..." type="text" />
+        </div>
+        <button
+            class="px-5 py-2.5 bg-primary hover:bg-green-800 text-white rounded-xl text-sm font-medium flex items-center justify-center gap-2 shadow-lg shadow-green-900/20 transition-all whitespace-nowrap">
+            <span class="material-icons-round text-lg">add</span>
+            Book Lab
+        </button>
+    </div>
+</div>
+
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+    <div class="bg-primary rounded-2xl p-6 shadow-glow text-black">
+        <div class="flex justify-between items-start mb-4">
+            <p class="font-bold opacity-80 text-xs uppercase tracking-wider">Total Labs</p>
+            <div class="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center">
+                <span class="material-icons-round text-sm">science</span>
+            </div>
+        </div>
+        <h3 class="text-4xl font-bold mb-3">36</h3>
+        <div class="flex items-center gap-2 text-xs font-bold">
+            <span class="bg-black/20 px-1.5 py-0.5 rounded text-[10px]">3+</span>
+            <span class="opacity-80">New labs this year</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex items-center justify-between">
+        <div>
+            <p class="text-sm font-medium text-gray-500 dark:text-text-muted mb-1">Currently Active</p>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white">28</h3>
+        </div>
+        <div
+            class="w-12 h-12 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center text-green-600 dark:text-green-400">
+            <span class="material-icons-round text-2xl">check_circle</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex items-center justify-between">
+        <div>
+            <p class="text-sm font-medium text-gray-500 dark:text-text-muted mb-1">Avg. Utilization</p>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white">74%</h3>
+        </div>
+        <div
+            class="w-12 h-12 rounded-full bg-gray-50 dark:bg-gray-800/30 flex items-center justify-center text-gray-600 dark:text-gray-400">
+            <span class="material-icons-round text-2xl">speed</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex items-center justify-between">
+        <div>
+            <p class="text-sm font-medium text-gray-500 dark:text-text-muted mb-1">Maintenance Due</p>
+            <h3 class="text-3xl font-bold text-red-600 dark:text-red-400">5</h3>
+        </div>
+        <div
+            class="w-12 h-12 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-red-600 dark:text-red-400">
+            <span class="material-icons-round text-2xl">build</span>
+        </div>
+    </div>
+</div>
+
+<!-- Lab Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+    <!-- Physics Research Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">experiment</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Physics Research Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room B-204 · Science Block</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">30</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">24</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Equipment</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">18</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">92%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 92%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Peak Hours: 9AM–1PM</span>
+                <span>Next Free: 3:30 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Chemistry Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">biotech</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Chemistry Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room A-112 · Science Block</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">25</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">18</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Equipment</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">22</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">72%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 72%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Peak Hours: 10AM–12PM</span>
+                <span>Next Free: 2:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Computer Science Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">computer</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">CS Lab – AI Cluster</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room C-310 · Tech Building</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">40</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">35</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">GPUs</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">12</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">88%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 88%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Peak Hours: 8AM–6PM</span>
+                <span>Always Busy</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Biology Wet Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">grass</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Biology Wet Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room A-308 · Life Sciences</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Maintenance</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">20</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">0</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Equipment</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">14</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">0%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-gray-300 h-1.5 rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Fume Hood Servicing</span>
+                <span>Back Online: Mar 5</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Notify
+                Me</button>
+        </div>
+    </div>
+
+    <!-- Engineering Workshop -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">engineering</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Engineering Workshop</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room D-101 · Engineering Wing</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">15</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">8</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Machines</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">9</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">53%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 53%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Peak Hours: 2PM–5PM</span>
+                <span>Next Free: Now</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Medical Simulation Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-600 dark:text-red-400">
+                    <span class="material-icons-round text-2xl">local_hospital</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Medical Simulation Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room M-201 · Medical School</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">12</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">10</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Simulators</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">6</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">83%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 83%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Peak Hours: 8AM–12PM</span>
+                <span>Next Free: 4:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Robotics Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">precision_manufacturing</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Robotics Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room E-105 · Engineering Wing</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">18</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">14</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Robots</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">8</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">78%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 78%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Peak Hours: 10AM–4PM</span>
+                <span>Next Free: 5:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Data Science Center -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">query_stats</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Data Science Center</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room C-415 · Tech Building</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">50</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">42</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Servers</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">24</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">84%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 84%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Peak Hours: 9AM–9PM</span>
+                <span>Always Busy</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Environmental Sciences Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">park</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Environmental Sciences</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room F-210 · Green Building</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">Offline</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">22</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">0</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Sensors</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">16</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">0%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-gray-300 h-1.5 rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>HVAC Upgrade</span>
+                <span>Back Online: Mar 12</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Notify
+                Me</button>
+        </div>
+    </div>
+
+    <!-- Nanotechnology Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">grain</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Nanotechnology Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room G-102 · Advanced Materials</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">16</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">12</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Microscopes</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">5</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">75%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>11AM–3PM</span>
+                <span>Next Free: 4:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Genetics Research Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">dna</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Genetics Research Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room B-310 · Life Sciences</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">20</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">19</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Sequencers</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">4</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">95%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 95%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>7AM–7PM</span>
+                <span>Always Busy</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Acoustics Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">graphic_eq</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Acoustics Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room H-201 · Physics Wing</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">10</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">6</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Sensors</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">12</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">60%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 60%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>1PM–4PM</span>
+                <span>Next Free: Now</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Materials Testing Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-900/30 flex items-center justify-center text-gray-600 dark:text-text-muted">
+                    <span class="material-icons-round text-2xl">hardware</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Materials Testing Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room D-205 · Engineering Wing</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Maintenance</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">14</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">0</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Testers</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">7</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">0%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-gray-300 h-1.5 rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>Calibration</span>
+                <span>Back Online: Mar 15</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Details</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Notify
+                Me</button>
+        </div>
+    </div>
+
+    <!-- Photonics Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-yellow-600 dark:text-primary">
+                    <span class="material-icons-round text-2xl">flare</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Photonics Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room C-108 · Optics Center</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">12</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">10</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Lasers</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">8</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">83%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 83%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>9AM–5PM</span>
+                <span>Next Free: 6:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- High-Voltage Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">bolt</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">High-Voltage Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room E-001 · Power Systems</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">8</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">5</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Stations</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">4</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">63%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 63%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>10AM–2PM</span>
+                <span>Next Free: 3:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Tissue Culture Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">spa</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Tissue Culture Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room A-405 · Bio Building</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">18</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">15</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Incubators</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">10</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">83%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 83%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>8AM–6PM</span>
+                <span>Next Free: 7:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- VR Simulation Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">vrpano</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">VR Simulation Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room C-502 · Tech Building</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">24</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">18</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Headsets</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">20</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">75%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>12PM–6PM</span>
+                <span>Next Free: 7:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Aero-Dynamics Tunnel -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">air</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Aero-Dynamics Tunnel</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room D-B01 · Basement Wing</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">6</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">4</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Sensors</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">32</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">67%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 67%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>9AM–1PM</span>
+                <span>Next Free: 2:30 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- GIS Mapping Lab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">map</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">GIS Mapping Lab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room F-310 · Geography Dept</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">30</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">22</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Stations</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">15</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">73%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 73%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>10AM–4PM</span>
+                <span>Next Free: 5:00 PM</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+
+    <!-- Semiconductor Fab -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">memory</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Semiconductor Fab</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room G-B02 · Clean Room</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">Restricted</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">10</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">8</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Tools</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">6</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">80%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>24/7 Access</span>
+                <span>By Appointment</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Request
+                Access</button>
+        </div>
+    </div>
+
+    <!-- Marine Biology Tank -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">water</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Marine Biology Tank</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">Room A-B01 · Aquatics Center</p>
+                </div>
+            </div>
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Active</span>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Capacity</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">8</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Booked</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">3</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-surface-dark rounded-xl p-3 text-center">
+                <p class="text-[10px] uppercase font-semibold text-gray-400 mb-1">Tanks</p>
+                <p class="text-sm font-bold text-gray-700 dark:text-gray-200">6</p>
+            </div>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Utilization</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">38%</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-secondary h-1.5 rounded-full" style="width: 38%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>6AM–10AM</span>
+                <span>Next Free: Now</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Schedule</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Book
+                Slot</button>
+        </div>
+    </div>
+</div>
