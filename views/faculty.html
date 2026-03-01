@@ -1,0 +1,985 @@
+﻿<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+    <div>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Faculty Members</h1>
+        <p class="text-gray-500 dark:text-text-muted text-sm">Directory of professors and academic staff.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+        <div class="relative w-full sm:w-64 md:hidden">
+            <span
+                class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl">search</span>
+            <input
+                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-surface-light dark:bg-surface-dark text-sm focus:ring-1 focus:ring-primary shadow-sm dark:text-white placeholder-gray-400"
+                placeholder="Find faculty..." type="text" />
+        </div>
+        <button
+            class="px-5 py-2.5 bg-primary hover:bg-green-800 text-white rounded-xl text-sm font-medium flex items-center justify-center gap-2 shadow-lg shadow-green-900/20 transition-all whitespace-nowrap">
+            <span class="material-icons-round text-lg">person_add</span>
+            Add Faculty
+        </button>
+    </div>
+</div>
+
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-primary rounded-2xl p-6 shadow-lg shadow-primary/20 text-white">
+        <div class="flex justify-between items-start mb-4">
+            <p class="font-bold opacity-80 text-xs uppercase tracking-wider">Total Faculty</p>
+            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                <span class="material-icons-round text-sm">groups</span>
+            </div>
+        </div>
+        <h3 class="text-4xl font-bold mb-3">482</h3>
+        <div class="flex items-center gap-2 text-xs font-bold">
+            <span class="bg-white/20 px-1.5 py-0.5 rounded text-[10px]">12+</span>
+            <span class="opacity-80">Hired since August</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex items-center justify-between">
+        <div>
+            <p class="text-sm font-medium text-gray-500 dark:text-text-muted mb-1">Research Leads</p>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white">124</h3>
+        </div>
+        <div
+            class="w-12 h-12 rounded-full bg-gray-50 dark:bg-gray-800/30 flex items-center justify-center text-primary dark:text-primary">
+            <span class="material-icons-round text-2xl">science</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex items-center justify-between">
+        <div>
+            <p class="text-sm font-medium text-gray-500 dark:text-text-muted mb-1">Faculty Satisfaction</p>
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white">92%</h3>
+        </div>
+        <div
+            class="w-12 h-12 rounded-full bg-gray-50 dark:bg-gray-800/30 flex items-center justify-center text-primary dark:text-primary">
+            <span class="material-icons-round text-2xl">sentiment_very_satisfied</span>
+        </div>
+    </div>
+</div>
+
+<!-- Faculty Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+    <!-- Dr. Alistair Deff -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <img alt="Professor"
+                class="w-16 h-16 rounded-full object-cover border-2 border-gray-100 dark:border-border-dark"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7veWjqKB1l_7Zd_FWOjQiqKL8HxoNrU6B_MIdMg0dhAP08TcAxqcCaLzbaKHWKs7tooU1sIc1Si0wHSleYRovDtGebshWgR5bRb7Ks0jX-FoIP2UsMDEFVZcNmkWOelSMPwq_XGHseHD4ynS5MFrbj52sUQP7VQuwfgzz-TDD_7iDo_Z1K7_xaLmyshPu8Snc0WH4emEWe3P1fPqnv2R13KOE0oCCf3tlvNnMwcJBo7ZloT2qjbHorzQyM7rrtawl_xSTr6H8BZ0" />
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Alistair Deff</h3>
+                <p class="text-sm text-primary font-medium">Computer Science</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Senior Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-purple-800 dark:bg-primary/20 dark:text-secondary">AI
+                &amp; Machine Learning</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 85%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>3 Active Grants</span>
+                <span>4 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Jane Smith -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <img alt="Professor"
+                class="w-16 h-16 rounded-full object-cover border-2 border-gray-100 dark:border-border-dark"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE56NTDmG4IyfYzP0GQ65eJbyMhBtZYpV2NfDCkgVyAC84v9Yry07wZYqtrlUmXzVGKUwmepWfoF9J3295aKZyc4dBeODoGRlvVTXuDs0atQ_16LtLe-_2jW1FZC6kPFAZe8uKF--Q1f5c1v8lj4n6UWyo69BSV851yLI-Eje5-VAQqSNysN6bIFN5jhUu9aDV3kANONTd0nRN16YGNLXy9D6X2OJreG3sD1zHy-EU3zmjyPNwbIjm2deRFQMdxbz-8iUYziTGwog" />
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Jane Smith</h3>
+                <p class="text-sm text-primary font-medium">Engineering</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Associate Dean</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-blue-800 dark:bg-gray-800/50 dark:text-gray-300">Robotics
+                &amp; Automation</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Medium</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 60%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>2 Active Grants</span>
+                <span>6 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Sarah Miller -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <img alt="Professor"
+                class="w-16 h-16 rounded-full object-cover border-2 border-gray-100 dark:border-border-dark"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRI-74VWHQbvZpILoH6jsbPR1A6j3epHTYlsv-rLChiYAWDt-wBTXTNXZaM4rokLCF_VeFp5Fg_FwYy9PSEVs1Iccc51Y4m4zVE3uLLvKunKHaQzxkbz6HTR2cL0x_5dK5-RGSoEAFH0f6YnxqdJhJXQqOqXPpOv3sm2y0GLr8cNL5S6FrCmnWvOIY1WXKWDBQJc2oLmugJIn6DG3vmjMfLAMeHHaU1-HJoMalMIX2Tp1hS7ENiFqWhLYIDW8rV0U5U_QNPk4emdQ" />
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Sarah Miller</h3>
+                <p class="text-sm text-primary font-medium">Arts &amp; Humanities</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Associate Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-rose-800 dark:bg-gray-800/50 dark:text-rose-300">Modern
+                History</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Normal</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 45%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>1 Active Grant</span>
+                <span>2 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Robert Khan -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-800/50">
+                RK</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Robert Khan</h3>
+                <p class="text-sm text-primary font-medium">Business School</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Department Head</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Economics
+                &amp; Policy</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>4 Active Grants</span>
+                <span>5 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Linda Chen -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                LC</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Linda Chen</h3>
+                <p class="text-sm text-primary font-medium">Medicine</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Clinical Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">Neurology</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Very High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 95%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>5 Active Grants</span>
+                <span>8 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Mike Ray -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                MR</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Mike Ray</h3>
+                <p class="text-sm text-primary font-medium">Architecture</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Visiting Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-teal-800 dark:bg-primary/20 dark:text-teal-300">Urban
+                Design</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Low</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-secondary h-1.5 rounded-full" style="width: 30%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>0 Active Grants</span>
+                <span>1 PhD Student</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Priya Gupta -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                PG</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Priya Gupta</h3>
+                <p class="text-sm text-primary font-medium">Mathematics</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Department Head</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-secondary">Applied
+                Statistics</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Medium</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 55%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>2 Active Grants</span>
+                <span>3 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Nathan Foster -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-800/50">
+                NF</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Nathan Foster</h3>
+                <p class="text-sm text-primary font-medium">Psychology</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Research Director</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Cognitive
+                Science</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 78%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>3 Active Grants</span>
+                <span>7 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Tom Woods -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                TW</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Tom Woods</h3>
+                <p class="text-sm text-primary font-medium">Environmental Science</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Senior Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-secondary">Climate
+                Science</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Normal</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 50%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>1 Active Grant</span>
+                <span>3 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Vikram Sharma -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-yellow-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                VS</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Vikram Sharma</h3>
+                <p class="text-sm text-primary font-medium">Physics</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Senior Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-secondary">Quantum
+                Optics</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Medium</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 58%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>2 Active Grants</span>
+                <span>4 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Harish Das -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-800/50">
+                HD</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Harish Das</h3>
+                <p class="text-sm text-primary font-medium">Chemistry</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Department Head</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Organic
+                Synthesis</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 82%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>4 Active Grants</span>
+                <span>6 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Sunita Reddy -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                SR</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Sunita Reddy</h3>
+                <p class="text-sm text-primary font-medium">Economics</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Associate Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-secondary">Development
+                Economics</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Normal</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 42%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>1 Active Grant</span>
+                <span>2 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Arjun Nair -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-900/30">
+                AN</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Arjun Nair</h3>
+                <p class="text-sm text-primary font-medium">Law</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Dean of Law</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-text-muted">Constitutional
+                Law</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 88%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>3 Active Grants</span>
+                <span>5 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Kavita Jain -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                KJ</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Kavita Jain</h3>
+                <p class="text-sm text-primary font-medium">Pharmacy</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Research Director</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-secondary">Pharmacology</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Medium</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 65%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>2 Active Grants</span>
+                <span>3 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Deepak Iyer -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-800/50">
+                DI</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Deepak Iyer</h3>
+                <p class="text-sm text-primary font-medium">Education</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Pedagogy
+                & Tech</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Low</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-secondary h-1.5 rounded-full" style="width: 35%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>1 Active Grant</span>
+                <span>1 PhD Student</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Ritu Bose -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                RB</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Ritu Bose</h3>
+                <p class="text-sm text-primary font-medium">Sociology</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Associate Dean</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-secondary">Urban
+                Sociology</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Normal</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 48%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>1 Active Grant</span>
+                <span>3 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Ganesh Menon -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-800/50">
+                GM</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Ganesh Menon</h3>
+                <p class="text-sm text-primary font-medium">Political Science</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Senior Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Public
+                Policy</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 76%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>3 Active Grants</span>
+                <span>4 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Lakshmi Prasad -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                LP</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Lakshmi Prasad</h3>
+                <p class="text-sm text-primary font-medium">Biotechnology</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Associate Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-teal-800 dark:bg-primary/20 dark:text-teal-300">Gene
+                Editing</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Very High</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 92%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>5 Active Grants</span>
+                <span>7 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Farid Ali -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-800/50">
+                FA</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Farid Ali</h3>
+                <p class="text-sm text-primary font-medium">Journalism</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Digital
+                Media</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Low</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-secondary h-1.5 rounded-full" style="width: 28%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>0 Active Grants</span>
+                <span>2 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Dr. Chitra Roy -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-gray-800/50">
+                CR</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Dr. Chitra Roy</h3>
+                <p class="text-sm text-primary font-medium">Fine Arts</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Visiting Professor</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300">Digital
+                Art</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Low</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-secondary h-1.5 rounded-full" style="width: 25%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>0 Active Grants</span>
+                <span>1 PhD Student</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+
+    <!-- Prof. Bimal Kumar -->
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col h-full hover:border-primary/30 transition-colors duration-200 group">
+        <div class="flex items-start gap-4 mb-4">
+            <div
+                class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-bold border-2 border-gray-100 dark:border-border-dark dark:bg-primary/20">
+                BK</div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white truncate">Prof. Bimal Kumar</h3>
+                <p class="text-sm text-primary font-medium">Statistics</p>
+                <p class="text-xs text-gray-500 dark:text-text-muted mt-1">Department Head</p>
+            </div>
+            <button
+                class="p-2 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                <span class="material-icons-round text-xl">more_vert</span>
+            </button>
+        </div>
+        <div class="mb-4">
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-secondary">Bayesian
+                Methods</span>
+        </div>
+        <div class="mb-6">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-xs font-medium text-gray-500 dark:text-text-muted">Current Workload</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">Medium</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-1.5">
+                <div class="bg-primary/70 h-1.5 rounded-full" style="width: 60%"></div>
+            </div>
+            <div class="flex justify-between mt-1.5 text-[10px] text-gray-400">
+                <span>2 Active Grants</span>
+                <span>4 PhD Students</span>
+            </div>
+        </div>
+        <div class="mt-auto grid grid-cols-2 gap-3">
+            <button
+                class="py-2 px-3 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary rounded-lg text-sm font-medium hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-center">View
+                Profile</button>
+            <button
+                class="py-2 px-3 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-center">Contact</button>
+        </div>
+    </div>
+</div>
