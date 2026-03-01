@@ -1,0 +1,382 @@
+﻿<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+    <div>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Resource Allocation</h1>
+        <p class="text-gray-500 dark:text-text-muted text-sm">Managing institutional departments, faculty
+            payroll, and research funding.</p>
+    </div>
+    <div class="flex gap-3">
+        <button
+            class="px-5 py-2.5 bg-primary hover:bg-green-800 text-white rounded-xl text-sm font-medium flex items-center gap-2 shadow-lg shadow-green-900/20 transition-all">
+            <span class="material-icons-round text-lg">add</span>
+            New Allocation
+        </button>
+        <button
+            class="px-5 py-2.5 bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-border-dark text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-xl text-sm font-medium transition-colors">
+            Export Excel
+        </button>
+    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <div class="bg-primary rounded-2xl p-6 text-white relative overflow-hidden">
+        <div class="flex justify-between items-start mb-4">
+            <p class="font-medium opacity-90">Total Departments</p>
+            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                <span class="material-icons-round text-sm">domain</span>
+            </div>
+        </div>
+        <h2 class="text-4xl font-bold mb-4">18</h2>
+        <div class="flex items-center gap-2 text-xs opacity-90">
+            <span class="bg-white/20 px-1.5 py-0.5 rounded text-[10px]">2+</span>
+            <span>New faculties this semester</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+        <div class="flex justify-between items-start mb-4">
+            <p class="font-medium text-gray-600 dark:text-text-muted">Active Faculty</p>
+            <div
+                class="w-8 h-8 rounded-full border border-gray-200 dark:border-border-dark flex items-center justify-center">
+                <span class="material-icons-round text-sm text-gray-500 dark:text-text-muted">person</span>
+            </div>
+        </div>
+        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">482</h2>
+        <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-text-muted">
+            <span
+                class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 px-1.5 py-0.5 rounded text-[10px] font-medium">12+</span>
+            <span>Hired since August</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+        <div class="flex justify-between items-start mb-4">
+            <p class="font-medium text-gray-600 dark:text-text-muted">Research Grants</p>
+            <div
+                class="w-8 h-8 rounded-full border border-gray-200 dark:border-border-dark flex items-center justify-center">
+                <span class="material-icons-round text-sm text-gray-500 dark:text-text-muted">biotech</span>
+            </div>
+        </div>
+        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">64</h2>
+        <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-text-muted">
+            <span
+                class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-text-muted px-1.5 py-0.5 rounded text-[10px] font-medium">Active</span>
+            <span>Projects currently funded</span>
+        </div>
+    </div>
+    <div
+        class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+        <div class="flex justify-between items-start mb-4">
+            <p class="font-medium text-gray-600 dark:text-text-muted">Allocated Budget</p>
+            <div
+                class="w-8 h-8 rounded-full border border-gray-200 dark:border-border-dark flex items-center justify-center">
+                <span
+                    class="material-icons-round text-sm text-gray-500 dark:text-text-muted">account_balance_wallet</span>
+            </div>
+        </div>
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">₹14.2M</h2>
+        <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-text-muted">
+            <span class="text-green-600 font-medium">92% Utilized</span>
+        </div>
+    </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="lg:col-span-2 space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+                class="md:col-span-2 bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-6">Budget Allocation by
+                    Department
+                </h3>
+                <div class="h-48 flex items-end justify-between gap-4 px-2">
+                    <div class="w-1/6 flex flex-col items-center gap-2">
+                        <div class="w-full h-32 bg-primary rounded-t-lg"></div>
+                        <span class="text-[10px] text-gray-400 uppercase font-medium">Science</span>
+                    </div>
+                    <div class="w-1/6 flex flex-col items-center gap-2">
+                        <div class="w-full h-24 bg-secondary/80 rounded-t-lg"></div>
+                        <span class="text-[10px] text-gray-400 uppercase font-medium">Arts</span>
+                    </div>
+                    <div class="w-1/6 flex flex-col items-center gap-2 relative group">
+                        <div
+                            class="absolute -top-8 bg-gray-100 dark:bg-surface-dark dark:border dark:border-primary/50 text-xs px-2 py-1 rounded shadow text-gray-600 dark:text-primary font-medium">
+                            ₹4.1M</div>
+                        <div class="w-full h-40 bg-primary/80 dark:shadow-glow rounded-t-lg"></div>
+                        <span class="text-[10px] text-gray-400 uppercase font-medium">Eng.</span>
+                    </div>
+                    <div class="w-1/6 flex flex-col items-center gap-2">
+                        <div class="w-full h-28 bg-primary/60 rounded-t-lg"></div>
+                        <span class="text-[10px] text-gray-400 uppercase font-medium">Med.</span>
+                    </div>
+                    <div class="w-1/6 flex flex-col items-center gap-2">
+                        <div
+                            class="w-full h-20 bg-gray-300 dark:bg-background-dark rounded-t-lg striped-bar dark:border dark:border-border-dark">
+                        </div>
+                        <span class="text-[10px] text-gray-400 uppercase font-medium">Law</span>
+                    </div>
+                    <div class="w-1/6 flex flex-col items-center gap-2">
+                        <div class="w-full h-24 bg-primary/40 rounded-t-lg"></div>
+                        <span class="text-[10px] text-gray-400 uppercase font-medium">Bus.</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark flex flex-col justify-between">
+                <div>
+                    <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Grant Deadlines</h3>
+                    <p class="font-medium text-lg leading-tight mb-2 text-gray-800 dark:text-gray-100">
+                        NSF
+                        Annual Research Submission</p>
+                    <p class="text-xs text-gray-500 dark:text-text-muted mb-6">Deadline: Dec 15, 2024</p>
+                </div>
+                <button
+                    class="w-full bg-primary hover:bg-green-800 text-white py-3 rounded-xl text-sm font-medium flex items-center justify-center gap-2 transition-colors">
+                    <span class="material-icons-round text-base">file_upload</span>
+                    Submit Report
+                </button>
+            </div>
+        </div>
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="font-semibold text-gray-900 dark:text-white">Faculty Assignments</h3>
+                <button
+                    class="text-xs flex items-center gap-1 border border-gray-200 dark:border-border-dark px-3 py-1.5 rounded-lg text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <span class="material-icons-round text-sm">add</span> Assign Course
+                </button>
+            </div>
+            <div class="space-y-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <img alt="Alexandra" class="w-10 h-10 rounded-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7veWjqKB1l_7Zd_FWOjQiqKL8HxoNrU6B_MIdMg0dhAP08TcAxqcCaLzbaKHWKs7tooU1sIc1Si0wHSleYRovDtGebshWgR5bRb7Ks0jX-FoIP2UsMDEFVZcNmkWOelSMPwq_XGHseHD4ynS5MFrbj52sUQP7VQuwfgzz-TDD_7iDo_Z1K7_xaLmyshPu8Snc0WH4emEWe3P1fPqnv2R13KOE0oCCf3tlvNnMwcJBo7ZloT2qjbHorzQyM7rrtawl_xSTr6H8BZ0" />
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900 dark:text-white">Prof.
+                                Alexandra
+                                Deff</p>
+                            <p class="text-xs text-gray-500 dark:text-text-muted">Assigned: <span
+                                    class="font-medium text-gray-700 dark:text-text-muted">Advanced
+                                    Theoretical Physics</span></p>
+                        </div>
+                    </div>
+                    <span
+                        class="text-[10px] px-2 py-1 rounded bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 font-medium">Full-Time</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <img alt="Edwin" class="w-10 h-10 rounded-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE56NTDmG4IyfYzP0GQ65eJbyMhBtZYpV2NfDCkgVyAC84v9Yry07wZYqtrlUmXzVGKUwmepWfoF9J3295aKZyc4dBeODoGRlvVTXuDs0atQ_16LtLe-_2jW1FZC6kPFAZe8uKF--Q1f5c1v8lj4n6UWyo69BSV851yLI-Eje5-VAQqSNysN6bIFN5jhUu9aDV3kANONTd0nRN16YGNLXy9D6X2OJreG3sD1zHy-EU3zmjyPNwbIjm2deRFQMdxbz-8iUYziTGwog" />
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900 dark:text-white">Dr. Edwin
+                                Adenike
+                            </p>
+                            <p class="text-xs text-gray-500 dark:text-text-muted">Assigned: <span
+                                    class="font-medium text-gray-700 dark:text-text-muted">Biochemistry
+                                    Lab
+                                    102</span></p>
+                        </div>
+                    </div>
+                    <span
+                        class="text-[10px] px-2 py-1 rounded bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary font-medium">Researcher</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <img alt="Isaac" class="w-10 h-10 rounded-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRI-74VWHQbvZpILoH6jsbPR1A6j3epHTYlsv-rLChiYAWDt-wBTXTNXZaM4rokLCF_VeFp5Fg_FwYy9PSEVs1Iccc51Y4m4zVE3uLLvKunKHaQzxkbz6HTR2cL0x_5dK5-RGSoEAFH0f6YnxqdJhJXQqOqXPpOv3sm2y0GLr8cNL5S6FrCmnWvOIY1WXKWDBQJc2oLmugJIn6DG3vmjMfLAMeHHaU1-HJoMalMIX2Tp1hS7ENiFqWhLYIDW8rV0U5U_QNPk4emdQ" />
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900 dark:text-white">Prof. Isaac
+                                Temi
+                            </p>
+                            <p class="text-xs text-gray-500 dark:text-text-muted">Assigned: <span
+                                    class="font-medium text-gray-700 dark:text-text-muted">Global
+                                    Economics
+                                    &amp; Policy</span></p>
+                        </div>
+                    </div>
+                    <span
+                        class="text-[10px] px-2 py-1 rounded bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 font-medium">Head
+                        of Dept</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center text-sm font-bold flex-shrink-0">
+                            PG</div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900 dark:text-white">Dr. Priya
+                                Gupta
+                            </p>
+                            <p class="text-xs text-gray-500 dark:text-text-muted">Assigned: <span
+                                    class="font-medium text-gray-700 dark:text-text-muted">Applied
+                                    Statistics</span></p>
+                        </div>
+                    </div>
+                    <span
+                        class="text-[10px] px-2 py-1 rounded bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary font-medium">Adjunct</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800/50 text-gray-600 flex items-center justify-center text-sm font-bold flex-shrink-0">
+                            NF</div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900 dark:text-white">Dr. Nathan
+                                Foster
+                            </p>
+                            <p class="text-xs text-gray-500 dark:text-text-muted">Assigned: <span
+                                    class="font-medium text-gray-700 dark:text-text-muted">Cognitive
+                                    Psychology</span></p>
+                        </div>
+                    </div>
+                    <span
+                        class="text-[10px] px-2 py-1 rounded bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-400 font-medium">Part-Time</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center text-sm font-bold flex-shrink-0">
+                            TW</div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-900 dark:text-white">Prof. Tom
+                                Woods
+                            </p>
+                            <p class="text-xs text-gray-500 dark:text-text-muted">Assigned: <span
+                                    class="font-medium text-gray-700 dark:text-text-muted">Climate
+                                    Science &amp; Modeling</span></p>
+                        </div>
+                    </div>
+                    <span
+                        class="text-[10px] px-2 py-1 rounded bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 font-medium">Full-Time</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-y-6">
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="font-semibold text-gray-900 dark:text-white">Active Research Projects</h3>
+                <button
+                    class="text-xs flex items-center gap-1 border border-gray-200 dark:border-border-dark px-2 py-1 rounded-lg text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <span class="material-icons-round text-sm">add</span> New
+                </button>
+            </div>
+            <div class="space-y-6">
+                <div class="flex gap-4 items-start">
+                    <div
+                        class="w-8 h-8 rounded bg-gray-100 dark:bg-gray-800/50 text-gray-600 flex items-center justify-center flex-shrink-0">
+                        <span class="material-icons-round text-sm">science</span>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100">Quantum
+                            Computing
+                            Study</h4>
+                        <p class="text-xs text-gray-400 mt-0.5">Funded: NSF</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div
+                        class="w-8 h-8 rounded bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center flex-shrink-0">
+                        <span class="material-icons-round text-sm">history_edu</span>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100">Archives
+                            Digitization</h4>
+                        <p class="text-xs text-gray-400 mt-0.5">Funded: Heritage Fund</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div
+                        class="w-8 h-8 rounded bg-primary/10 dark:bg-primary/20 text-yellow-600 flex items-center justify-center flex-shrink-0">
+                        <span class="material-icons-round text-sm">public</span>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100">Climate
+                            Change
+                            Modeling</h4>
+                        <p class="text-xs text-gray-400 mt-0.5">Funded: UN-Energy</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div
+                        class="w-8 h-8 rounded bg-gray-100 dark:bg-gray-800/50 text-gray-600 flex items-center justify-center flex-shrink-0">
+                        <span class="material-icons-round text-sm">psychology</span>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100">Neural
+                            Pattern
+                            Mapping</h4>
+                        <p class="text-xs text-gray-400 mt-0.5">Funded: NIH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-gray-900 dark:text-white">Budget Utilization</h3>
+                <button
+                    class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors text-gray-400">
+                    <span class="material-icons-round text-xl">more_horiz</span>
+                </button>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="relative w-44 h-44 mb-6">
+                    <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                        <circle class="text-gray-100 dark:text-gray-800" cx="50" cy="50" fill="none" r="42"
+                            stroke="currentColor" stroke-width="8"></circle>
+                        <circle class="text-primary transition-all duration-1000" cx="50" cy="50" fill="none" r="42"
+                            stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="65.97"
+                            stroke-linecap="round" stroke-width="8"></circle>
+                        <circle class="text-secondary transition-all duration-1000" cx="50" cy="50" fill="none" r="42"
+                            stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="211.11"
+                            stroke-linecap="round" stroke-width="8"
+                            style="transform: rotate(270deg); transform-origin: center;"></circle>
+                        <circle class="text-gray-400 transition-all duration-1000" cx="50" cy="50" fill="none" r="42"
+                            stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="237.50"
+                            stroke-linecap="round" stroke-width="8"
+                            style="transform: rotate(340deg); transform-origin: center;"></circle>
+                    </svg>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <span class="text-3xl font-bold text-gray-900 dark:text-white">75%</span>
+                        <span
+                            class="text-[10px] text-gray-500 dark:text-text-muted font-bold uppercase tracking-wider">Spent</span>
+                    </div>
+                </div>
+                <div class="w-full space-y-3 mt-2">
+                    <div
+                        class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-white/5/50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-primary shadow-sm"></div>
+                            <span class="text-sm font-medium text-gray-600 dark:text-text-muted">Spent</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="text-sm font-bold text-gray-900 dark:text-white">₹10.6M</span>
+                            <span class="text-[11px] font-semibold text-gray-400 w-8 text-right">75%</span>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-white/5/50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-secondary shadow-sm"></div>
+                            <span class="text-sm font-medium text-gray-600 dark:text-text-muted">Committed</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="text-sm font-bold text-gray-900 dark:text-white">₹2.8M</span>
+                            <span class="text-[11px] font-semibold text-gray-400 w-8 text-right">20%</span>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-white/5/50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-gray-400 shadow-sm"></div>
+                            <span class="text-sm font-medium text-gray-600 dark:text-text-muted">Available</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="text-sm font-bold text-gray-900 dark:text-white">₹0.8M</span>
+                            <span class="text-[11px] font-semibold text-gray-400 w-8 text-right">5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
