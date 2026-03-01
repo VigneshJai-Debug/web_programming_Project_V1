@@ -1,0 +1,46 @@
+/* ===========================
+   Sidebar Transitions & States
+   =========================== */
+
+#sidebar {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-collapsed {
+    width: 88px !important;
+}
+
+.sidebar-collapsed .sidebar-text {
+    opacity: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    pointer-events: none;
+    display: none;
+}
+
+.sidebar-collapsed #sidebar-collapse-btn {
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar-collapsed #sidebar-collapse-btn span {
+    transform: rotate(180deg);
+}
+
+.sidebar-show {
+    transform: translateX(0) !important;
+}
+
+#sidebar-overlay.overlay-show {
+    display: block !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+@media (max-width: 1023px) {
+    #sidebar {
+        width: 280px;
+    }
+}
