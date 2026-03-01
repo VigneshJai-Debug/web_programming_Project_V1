@@ -1,0 +1,277 @@
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+    <div>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Settings</h1>
+        <p class="text-gray-500 dark:text-text-muted text-sm">Manage your account preferences and system configurations.
+        </p>
+    </div>
+    <div class="flex gap-3">
+        <button
+            class="px-5 py-2.5 border border-gray-200 dark:border-border-dark text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 rounded-xl text-sm font-medium transition-colors">Cancel</button>
+        <button
+            class="px-5 py-2.5 bg-primary hover:bg-green-800 text-white rounded-xl text-sm font-medium shadow-lg shadow-green-900/20 transition-colors">Save
+            Changes</button>
+    </div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+    <!-- Left Column: Profile + Notifications -->
+    <div class="lg:col-span-2 space-y-6">
+
+        <!-- Account Profile -->
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <div class="flex items-center gap-4 mb-6 pb-6 border-b border-gray-100 dark:border-border-dark">
+                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-icons-round text-2xl">person</span>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold text-gray-900 dark:text-white">Account Profile</h2>
+                    <p class="text-sm text-gray-500 dark:text-text-muted">Update your personal information and
+                        credentials
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="col-span-2 md:col-span-1">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-text-muted mb-2">Full Name</label>
+                    <div class="relative">
+                        <span
+                            class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg">badge</span>
+                        <input
+                            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:text-white placeholder-gray-400 transition-shadow"
+                            type="text" value="Dr. Admin Portal" />
+                    </div>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-text-muted mb-2">Email
+                        Address</label>
+                    <div class="relative">
+                        <span
+                            class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg">email</span>
+                        <input
+                            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:text-white placeholder-gray-400 transition-shadow"
+                            type="email" value="admin@university.edu" />
+                    </div>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-text-muted mb-2">Role</label>
+                    <div class="relative">
+                        <span
+                            class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg">work</span>
+                        <input
+                            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-100 dark:bg-gray-900/50 text-sm text-gray-500 dark:text-text-muted cursor-not-allowed"
+                            readonly type="text" value="System Administrator" />
+                    </div>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-text-muted mb-2">Department</label>
+                    <div class="relative">
+                        <span
+                            class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg">apartment</span>
+                        <input
+                            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:text-white placeholder-gray-400 transition-shadow"
+                            type="text" value="Central Administration" />
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-text-muted mb-2">Change
+                        Password</label>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="relative flex-1">
+                            <span
+                                class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg">lock</span>
+                            <input
+                                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:text-white placeholder-gray-400 transition-shadow"
+                                placeholder="New Password" type="password" />
+                        </div>
+                        <div class="relative flex-1">
+                            <span
+                                class="material-icons-round absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg">lock_reset</span>
+                            <input
+                                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800 text-sm focus:ring-2 focus:ring-primary focus:border-primary dark:text-white placeholder-gray-400 transition-shadow"
+                                placeholder="Confirm Password" type="password" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Preferences -->
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <div class="flex items-center gap-4 mb-6 pb-6 border-b border-gray-100 dark:border-border-dark">
+                <div
+                    class="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-2xl">notifications_active</span>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold text-gray-900 dark:text-white">Notification Preferences</h2>
+                    <p class="text-sm text-gray-500 dark:text-text-muted">Control how and when you receive alerts</p>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-900 dark:text-white">Email Notifications</h3>
+                        <p class="text-xs text-gray-500 dark:text-text-muted mt-0.5">Receive daily summaries and
+                            critical
+                            alerts via email.</p>
+                    </div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input checked class="sr-only peer" type="checkbox" />
+                        <div
+                            class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/50 dark:peer-focus:ring-primary/30 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-900 dark:text-white">Grant Approvals</h3>
+                        <p class="text-xs text-gray-500 dark:text-text-muted mt-0.5">Notify when a new grant requires
+                            approval.</p>
+                    </div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input checked class="sr-only peer" type="checkbox" />
+                        <div
+                            class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/50 dark:peer-focus:ring-primary/30 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-900 dark:text-white">Budget Alerts</h3>
+                        <p class="text-xs text-gray-500 dark:text-text-muted mt-0.5">Alert when budget utilization
+                            exceeds
+                            80%.</p>
+                    </div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input checked class="sr-only peer" type="checkbox" />
+                        <div
+                            class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/50 dark:peer-focus:ring-primary/30 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-900 dark:text-white">System Maintenance</h3>
+                        <p class="text-xs text-gray-500 dark:text-text-muted mt-0.5">Announcements about scheduled
+                            downtime.</p>
+                    </div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input class="sr-only peer" type="checkbox" />
+                        <div
+                            class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary/50 dark:peer-focus:ring-primary/30 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Column: Display, Storage, Quick Actions -->
+    <div class="space-y-6">
+
+        <!-- System Display -->
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <div class="flex items-center gap-4 mb-6 pb-6 border-b border-gray-100 dark:border-border-dark">
+                <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-primary">
+                    <span class="material-icons-round text-2xl">desktop_windows</span>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold text-gray-900 dark:text-white">System Display</h2>
+                    <p class="text-sm text-gray-500 dark:text-text-muted">Customize interface appearance</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <label
+                    class="theme-option flex items-center justify-between p-3 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800/50 cursor-pointer transition-all hover:border-primary/40">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-white dark:bg-gray-700 flex items-center justify-center text-gray-600 dark:text-text-muted shadow-sm">
+                            <span class="material-icons-round text-lg">light_mode</span>
+                        </div>
+                        <span class="text-sm font-medium text-gray-900 dark:text-white">Light Mode</span>
+                    </div>
+                    <input class="form-radio h-4 w-4 text-primary border-gray-300 focus:ring-primary" name="theme-mode"
+                        data-theme="light" type="radio" />
+                </label>
+                <label
+                    class="theme-option flex items-center justify-between p-3 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800/50 cursor-pointer transition-all hover:border-primary/40">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center text-white shadow-sm">
+                            <span class="material-icons-round text-lg">dark_mode</span>
+                        </div>
+                        <span class="text-sm font-medium text-gray-900 dark:text-white">Dark Mode</span>
+                    </div>
+                    <input class="form-radio h-4 w-4 text-primary border-gray-300 focus:ring-primary" name="theme-mode"
+                        data-theme="dark" type="radio" />
+                </label>
+                <label
+                    class="theme-option flex items-center justify-between p-3 rounded-xl border border-gray-200 dark:border-border-dark bg-gray-50 dark:bg-gray-800/50 cursor-pointer transition-all hover:border-primary/40">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-gradient-to-tr from-gray-200 to-gray-800 flex items-center justify-center text-gray-600 dark:text-text-muted shadow-sm">
+                            <span class="material-icons-round text-lg">settings_brightness</span>
+                        </div>
+                        <span class="text-sm font-medium text-gray-900 dark:text-white">System Default</span>
+                    </div>
+                    <input class="form-radio h-4 w-4 text-primary border-gray-300 focus:ring-primary" name="theme-mode"
+                        data-theme="system" type="radio" />
+                </label>
+            </div>
+        </div>
+
+        <!-- Storage Usage -->
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <div class="flex items-center gap-4 mb-4">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center text-gray-600 dark:text-gray-400">
+                    <span class="material-icons-round text-xl">cloud_queue</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 dark:text-white">Storage Usage</h3>
+                    <p class="text-xs text-gray-500 dark:text-text-muted">University Server</p>
+                </div>
+            </div>
+            <div class="mb-2 flex justify-between items-end">
+                <span class="text-2xl font-bold text-gray-900 dark:text-white">82.5 <span
+                        class="text-sm font-normal text-gray-500">GB</span></span>
+                <span class="text-xs text-gray-500">of 100 GB</span>
+            </div>
+            <div class="w-full bg-gray-100 dark:bg-surface-dark rounded-full h-2 mb-4">
+                <div class="bg-primary h-2 rounded-full" style="width: 82%"></div>
+            </div>
+            <button
+                class="w-full py-2 border border-gray-200 dark:border-border-dark rounded-lg text-sm font-medium text-gray-600 dark:text-text-muted hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Manage
+                Storage</button>
+        </div>
+
+        <!-- Quick Actions -->
+        <div
+            class="bg-surface-light dark:bg-card-dark rounded-2xl p-6 shadow-soft dark:shadow-elevated border border-transparent dark:border-border-dark">
+            <h3 class="font-bold text-gray-900 dark:text-white mb-4">Quick Actions</h3>
+            <div class="space-y-3">
+                <button
+                    class="w-full flex items-center gap-3 p-2 text-sm text-gray-600 dark:text-text-muted hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-white/5 rounded-lg transition-colors text-left">
+                    <span class="material-icons-round text-lg">download</span>
+                    Export Data Log
+                </button>
+                <button
+                    class="w-full flex items-center gap-3 p-2 text-sm text-gray-600 dark:text-text-muted hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-white/5 rounded-lg transition-colors text-left">
+                    <span class="material-icons-round text-lg">security</span>
+                    Security Audit
+                </button>
+                <button
+                    class="w-full flex items-center gap-3 p-2 text-sm text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors text-left">
+                    <span class="material-icons-round text-lg">logout</span>
+                    Sign Out
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
