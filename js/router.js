@@ -53,17 +53,13 @@ async function loadView(viewName) {
     const container = document.getElementById('view-container');
     if (!container) return;
 
-    // Show a subtle loading state
-    container.style.opacity = '0.5';
-    container.style.transition = 'opacity 0.15s ease';
-
     const html = await fetchView(viewName);
     container.innerHTML = html;
 
-    // Fade in
-    requestAnimationFrame(() => {
-        container.style.opacity = '1';
-    });
+    // Trigger fade-up animation
+    container.classList.remove('view-animate');
+    void container.offsetWidth; // force reflow so animation restarts
+    container.classList.add('view-animate');
 
     // Wire up settings controls if the Settings view was loaded
     bindSettingsControls();
@@ -78,10 +74,12 @@ function setActiveNav(activeLink) {
     navLinks.forEach(link => {
         link.classList.remove(...ACTIVE_CLASSES);
         link.classList.add(...INACTIVE_CLASSES);
+        link.classList.remove('nav-active-indicator');
     });
 
     activeLink.classList.add(...ACTIVE_CLASSES);
     activeLink.classList.remove(...INACTIVE_CLASSES);
+    activeLink.classList.add('nav-active-indicator');
 }
 
 /**
